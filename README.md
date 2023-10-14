@@ -1,83 +1,114 @@
-# Project 1 - Library Project using Dart
+# Project 1 
+Library Project contain these features :
 
-Congratulations on reaching the project phase! This project will assess your ability to develop a "Library Project using Dart" with a Command Line Interface (CLI) to manage a library's book inventory and user interactions. Below are the key requirements and evaluation criteria:
+* Display all books 
+* Add new book
+* Delete book
+* Update book info title , auther , price or No. of copies
+* Search book by ID , title , author or category
+* Purches a book and dispaly invoice
 
-
-## Description:
-
-The "Library Project using Dart" is an exciting software application designed to efficiently manage a library's book inventory and streamline user interactions through a Command Line Interface (CLI). This capstone project provides you, as a student, with an excellent opportunity to apply your knowledge and skills in Flutter Development, showcasing your proficiency in Dart programming.
-
-The primary goal of the project is to develop a user-friendly and efficient CLI that caters to both library staff and patrons. With this CLI, users can effortlessly query books, view the number of available copies, add new books to the library, delete books from the inventory, make book purchases, and receive detailed invoices after each purchase. Additionally, the project demands an essential feature - updating the number of book copies after a purchase is made to maintain accurate inventory records.
-
-To begin, you will create a new Dart project, ensuring that the project structure is appropriately organized for a clean and manageable codebase. As you progress, it is crucial to write code that is clear, well-organized, and scalable, adhering to standard coding conventions to enhance code readability. Demonstrating your comprehensive understanding of programming concepts and techniques is essential for a successful outcome.
-
-Your CLI should allow users to search for books by title, author, or category, providing a straightforward and accessible way to retrieve information about the library's collection. Implementing a method to add new books to the library with the appropriate updates to the book count will further enhance the system's usability.
-
-Managing the library's inventory also involves implementing a method to delete books, ensuring smooth handling of cases where a book to be deleted does not exist. Facilitating book purchases through the CLI is another critical aspect, requiring you to decrease the number of book copies according to the books purchased and generate an informative invoice for the user.
-
-As an extra credit opportunity, you can implement features such as displaying all book categories in the library, returning a list of books belonging to a selected category. Additionally, providing a method to count the number of purchased books will further showcase your skills.
-
-The project must be written entirely in the Dart language and fully submitted through GitHub using version control (Git). Remember to create descriptive commits to showcase your progress and follow the provided guidelines for academic integrity.
+Now you can see the output of the application and have small breif in each feature.
 
 
+In the main class I have create object from type StartApp class that contain all the features.
 
-## Minimum Requirements:
+If we run the program you can see the library book menu to allow the user choose any of these features.
 
-1. **Project Structure**: Create a new Dart project and organize its structure appropriately. Set up the necessary folders, files, and ensure a clean and organized project layout.
+![first menu](https://github.com/rahafwmaq/Project-1/assets/86989761/40c02cda-ee2e-4d29-b6bb-55d711e16889)
 
-2. **Clean Code**: Write clear, well-organized, and scalable code. Use meaningful variable and function names, following standard coding conventions to improve code readability. Well-structured and easily maintainable code is essential.
+If the user select No.1 it will display library book. I have create object from DisplayBook class.
 
-3. **Applying Concepts**: Demonstrate a comprehensive understanding of programming concepts and techniques. Implement the CLI features with efficiency and correctness.
+![1  display all books](https://github.com/rahafwmaq/Project-1/assets/86989761/c31de423-5a14-41c6-afc3-c3001d6722ee)
 
-4. **Query Books**: Develop a simple CLI user interface that allows users to query books and view the number of available copies. Users should be able to search for books by title, author, or category.
+If user enter invalid entry.
 
-5. **Add New Book**: Provide a method to add a new book to the library and update the number of book copies accordingly. Ensure proper error handling for invalid inputs.
+![invalid entry in Library menu](https://github.com/rahafwmaq/Project-1/assets/86989761/fe9a101f-f1a7-4a0d-9c22-3fbf8e73d3ef)
 
-6. **Delete Book**: Implement a method to delete a book from the library and update the book count. Handle cases where the book to be deleted does not exist.
 
-7. **Purchase**: Implement the purchase process, allowing users to buy books from the library. Ensure that the number of book copies is decreased according to the books purchased.
+If user select No.2 it will display new menu , will let user to choose search by ID , Author , Category  or Title.
+I have create object from Search class.
 
-8. **Invoice**: Display a detailed invoice after the purchase, showing the books purchased, their prices, and the total cost.
+![2  search will display list of search ](https://github.com/rahafwmaq/Project-1/assets/86989761/d0860859-6640-4e76-81d4-cedd08bd7113)
 
-9. **Editing Capability**: Add the ability to modify book data, such as title, author, and price. Users should be able to update book information easily.
+If the user choose No.5 it will return to library book menu
 
-## Ideas for Extra Credit:
+![if we press 5 will return to library menu](https://github.com/rahafwmaq/Project-1/assets/86989761/fed6f1d4-4d87-4b49-bd3f-86c33070f3f1)
 
-- **Display all Book Categories**: Provide a method to display a list of all book categories in the library. When a category is selected, return a list of all books belonging to that category.
-- **Reporting:** Provide a method to present a report that contains the number of all purchased books from the library, and calculate their amount.
-  
 
-## Delivery Requirements:
+If user choose search by Title.
 
-- **Language**: The project should be written in Dart language.
+![search by title ](https://github.com/rahafwmaq/Project-1/assets/86989761/c9585279-4251-470a-9658-3d988d37591d)
 
-- **GitHub Submission**:
-   - Create a Fork from the exam’s GitHub repository.
-   - Create a new branch with your name.
-   - Commit frequently with descriptive messages to show your progress.
-   - Finally, create a Pull Request to the exam’s original repository containing your solution.
+If user choose search by Category.
 
-- **README.md File**: Include a README.md file with instructions on how to run and test the project. This file should provide a clear guide for users to understand how to interact with the CLI.
+![search by category](https://github.com/rahafwmaq/Project-1/assets/86989761/e2684291-e528-4321-b269-e59db275be9e)
 
-- **Screenshots**: Include relevant screenshots of the app to showcase its appearance and functionalities. Visuals can help users understand the app's design and layout.
+If user enter invalid entry.
 
-## Schedule & Deadlines:
+![invalid entry](https://github.com/rahafwmaq/Project-1/assets/86989761/5da3d8aa-237c-4547-9115-69c2d6848ff9)
 
-- Exam Start Date: 12/10/2023 - 3:00 PM
-- Exam Submission Deadline: 15/10/2023 – 9:59 AM
+If user select No.3 it will ask user to insert the new book info . I have create object from AddBook class. 
 
-## Evaluation Criteria:
+![add new book](https://github.com/rahafwmaq/Project-1/assets/86989761/c446db3d-9c66-4281-ac0c-ac39781f7298)
 
-The project will be evaluated based on the following criteria:
+After adding user select from library menu No.1 to see the new book in the library.
 
-- **Completion**: The extent to which the project meets all the minimum requirements, including the extra credit ideas if implemented.
+![display library after adding ](https://github.com/rahafwmaq/Project-1/assets/86989761/f64371c8-a7af-4241-bd33-651afa2bd471)
 
-- **Quality**: The overall quality of the project, including the coding style, organization, and ease of maintenance. Well-structured and readable code will be favorably evaluated.
+If user select No.4 it will ask user to search for book want to delete , I have create object from DeleteBook class.
+I call method in Search class to let uesr search by ID Author or Title . Also you can see if the user enter invalid entry
 
-- **Use of Programming Concepts**: How well you utilize programming concepts such as classes, abstracts, functions, and other relevant techniques.
+![delete book but invalid entry](https://github.com/rahafwmaq/Project-1/assets/86989761/770ca547-f7e9-4719-842f-8d3632e38740)
 
-## Resources
+If the book deleted .
 
-- [Dart Tutorials](https://dart.dev/tutorials)
+![delete book](https://github.com/rahafwmaq/Project-1/assets/86989761/19dfb83a-ca3b-4841-b657-7004be07990c)
 
-Good luck with the project, and feel free to ask any additional questions if needed!
+
+If user select No.5 it will let user update book info by four option. I have create object from UpdateBookInfo class
+the update was by title in this case.
+
+
+![update another book](https://github.com/rahafwmaq/Project-1/assets/86989761/174ebc83-2c13-4878-b1cf-ae094a287eea)
+
+![update another book 2](https://github.com/rahafwmaq/Project-1/assets/86989761/758a4a06-9fde-4fca-9fb9-9bf7e90970a1)
+
+
+
+in this case was updated by number of copies.
+
+
+![update book](https://github.com/rahafwmaq/Project-1/assets/86989761/984c928f-c685-495e-ab5f-dcdaa83cffca)
+
+![update book 2](https://github.com/rahafwmaq/Project-1/assets/86989761/4b68ddb0-ed19-4ee7-9e23-26e635528cc9)
+
+
+
+If user select No.6 it will let user buy (purches) a book and display invoice , also the copies will decreases.
+I have create object from Purches class.
+here user enter invalid entry.
+
+![buy book invalid entry](https://github.com/rahafwmaq/Project-1/assets/86989761/87ef9fcd-666e-411d-93e9-93b44fa7a781)
+
+If user want to cancel the purches.
+
+![buy book - n](https://github.com/rahafwmaq/Project-1/assets/86989761/6f24c060-b05a-4be7-94a0-3e63d23cd569)
+
+if user wan to purches.
+
+![buy book - y](https://github.com/rahafwmaq/Project-1/assets/86989761/0e039df7-3a61-4cdb-8abd-fccf42abaa3f)
+
+the copies decreases.
+
+![after buy decreese the copies ](https://github.com/rahafwmaq/Project-1/assets/86989761/e4ca198a-3d0c-4e3e-84a0-08585476125e)
+
+
+If user press q or Q will let user to Exit from the applicaion 
+
+![to exit from app ](https://github.com/rahafwmaq/Project-1/assets/86989761/df29010b-b3f3-4f44-8e9b-dd83bcfe2788)
+
+
+
+
+
