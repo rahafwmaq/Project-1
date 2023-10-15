@@ -2,10 +2,9 @@ import 'dart:io';
 import 'databook.dart';
 import 'displaybook.dart';
 
-
 //class Search => to search book by lots of choises
 //it is inheritance DisplayBook becuse we use some method in DisplayBook such as displayInfo()
-// it contain with main function wich is listOfSearch() to let user choose to serch by 
+// it contain with main function wich is listOfSearch() to let user choose to serch by
 // four function searchByID(),searchByAuthor(),searchByTitle() and searchByCategory
 class Search extends DisplayBook {
   void listOfSearch() {
@@ -66,6 +65,7 @@ class Search extends DisplayBook {
       displayInfo(numberOfIndex);
     } else {
       print("\n Incorrect entry -_- \n please try again\n");
+      
     }
     return numberOfIndex;
   }
@@ -97,7 +97,6 @@ class Search extends DisplayBook {
           numberOfIndex = i;
           displayInfo(numberOfIndex);
         }
-        
       }
     } else {
       print("\n Incorrect entry -_- \n please try again\n");

@@ -4,8 +4,8 @@ import 'search.dart';
 
 //class UpdateBookInfo => to update book info
 //it is inheritance method from Search
-//contain four methods listUpdate() => to search for the book the user want to update 
-//update() => what the user want to update 
+//contain four methods listUpdate() => to search for the book the user want to update
+//update() => what the user want to update
 //addCopies() and DeleteCopies() if the user want to updat the copies of book
 
 class UpdateBookInfo extends Search {
@@ -106,10 +106,10 @@ class UpdateBookInfo extends Search {
         }
       } else if (userUpdate == "5") {
         run1 = false;
-        listUpdate();
+        return;
       } else {
         print("\n Incorrect entry -_- \n please try again\n");
-        return;
+        //return;
       }
     }
   }
